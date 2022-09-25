@@ -1,0 +1,21 @@
+int main()
+{
+	int i;//学生成绩
+	int y;//学生学号
+	int u;
+	int arr[6];
+	int brr[6];
+	for (u = 1; u <= 5; u++)
+	{
+		scanf("%d %d", &y, &i);
+		arr[u] = i;
+		brr[u] = y;
+	}
+	printf("\n");
+	for (u = 1; u <= 5; u++)
+	{
+		if (arr[u] >= 80)
+			printf("%d %d\n", brr[u], arr[u]);
+	}
+	return 0;
+}
